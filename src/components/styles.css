@@ -122,6 +122,10 @@ button {
   .calcDisplay {
     border-radius: 0;
     height: 3rem;
-    font-size: small;
+  }
+  .calcDisplay h1 {
+    font-size: xx-large;
+    font-weight: 400;
+    padding-right: 1rem;
   }
 }
