@@ -13,13 +13,13 @@ const CalculatorBody = () => {
     const stringOperand = operand.toString();
     let parsedOperand = "";
     for (let i = 0; i < stringOperand.length; i++) {
-      if (stringOperand[i] == "√") {
+      if (stringOperand[i] === "√") {
         parsedOperand += `Math.sqrt`;
-      } else if (stringOperand[i] == "^") {
+      } else if (stringOperand[i] === "^") {
         parsedOperand += "**";
-      } else if (stringOperand[i] == "π") {
+      } else if (stringOperand[i] === "π") {
         parsedOperand += "(3.141592)";
-      } else if (stringOperand[i] == "÷") {
+      } else if (stringOperand[i] === "÷") {
         parsedOperand += "/";
       } else {
         parsedOperand += stringOperand[i];
@@ -34,7 +34,7 @@ const CalculatorBody = () => {
     // looping through the items
     for (let i = 0; i < str.length; i++) {
       // check if the character is at that position
-      if (str.charAt(i) == letter) {
+      if (str.charAt(i) === letter) {
         count += 1;
       }
     }
@@ -131,7 +131,7 @@ const CalculatorBody = () => {
         <button
           className="calcButton"
           onClick={() => {
-            if (CurrentOperand != "") {
+            if (CurrentOperand !== "") {
               setCurrentOperand((CurrentOperand) => "");
             }
           }}
@@ -419,7 +419,7 @@ const CalculatorBody = () => {
         <button
           className="calcButton"
           onClick={() => {
-            if (CurrentOperand != "") {
+            if (CurrentOperand !== "") {
               setCurrentOperand((CurrentOperand) =>
                 CurrentOperand.slice(0, -1)
               );
@@ -434,7 +434,8 @@ const CalculatorBody = () => {
           onClick={() => {
             let operation = parseOperand(CurrentOperand);
             console.log(operation);
-            if (operation != "") {
+            if (operation !== "") {
+              // eslint-disable-next-line
               let answer = eval(operation); // Evaluatuates the expression
               let fixedAnswer = Number(answer.toFixed(6)); // Trims the result to 6 decimal places
               if (fixedAnswer === 0 || typeof fixedAnswer !== "number") {
@@ -453,7 +454,7 @@ const CalculatorBody = () => {
           =
         </button>
       </div>
-      <h2>Made by Brad Thompson 2022</h2>
+      <h2>Made by Brad - 2022</h2>
     </div>
   );
 };

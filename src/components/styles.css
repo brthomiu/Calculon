@@ -63,20 +63,24 @@ button {
 @media screen and (max-width: 800px) {
   .calcBody {
     scale: 70%;
+    max-width: fit-content;
     align-self: center;
     align-content: center;
     justify-content: center;
-    overflow: hidden;
+    padding: 1rem;
+    overflow: scroll;
   }
 }
 
 @media screen and (max-width: 550px) {
   .calcBody {
-    scale: 45%;
+    scale: 50%;
+    max-width: fit-content;
+    padding: 1rem;
     align-self: center;
     align-content: center;
     justify-content: center;
-    overflow: hidden;
-    margin-left: -10rem;
+    overflow: scroll;
+    margin-left: -5rem;
   }
 }
