@@ -6,3 +6,5 @@ Calculon is scientific calculator webapp, built with React and JavaScript, desig
 Calculon utilizes the UseState() hook to store the operand and the solution.
 
 Expressions are parsed through a formatting function prior to evaluation to prevent JavaScript errors, and the solution is updated with a setter function.
+
+https://brthomiu.github.io/calculon/
