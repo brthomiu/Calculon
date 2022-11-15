@@ -62,7 +62,7 @@ button {
 
 @media screen and (max-width: 800px) {
   .calcBody {
-    scale: 75%;
+    scale: 70%;
     align-self: center;
     align-content: center;
     justify-content: center;
@@ -72,7 +72,7 @@ button {
 
 @media screen and (max-width: 550px) {
   .calcBody {
-    scale: 60%;
+    scale: 45%;
     align-self: center;
     align-content: center;
     justify-content: center;
