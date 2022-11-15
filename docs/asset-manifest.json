@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1e42f219.css",
+    "main.js": "/static/js/main.667037fc.js",
+    "static/media/calculon.png": "/static/media/calculon.efb4fe99a2ac9615ad84.png",
+    "index.html": "/index.html",
+    "main.1e42f219.css.map": "/static/css/main.1e42f219.css.map",
+    "main.667037fc.js.map": "/static/js/main.667037fc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1e42f219.css",
+    "static/js/main.667037fc.js"
+  ]
+}

@@ -1,0 +1,82 @@
+.calcBody {
+  display: flex;
+  flex-direction: column;
+  background-color: #feb81c;
+  color: #000308;
+  border-radius: 10%;
+  width: 42rem;
+  align-items: center;
+  overflow: hidden;
+}
+
+.calcHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.calculonIcon {
+  width: 5rem;
+  margin-left: 2rem;
+}
+
+.calcDisplay {
+  background-color: #000308;
+  width: 75%;
+  height: 4rem;
+  border-radius: 0;
+  color: #aaf787;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+  overflow: hidden;
+}
+
+.calcDisplay h1 {
+  padding-right: 2.45rem;
+}
+
+.previousOperand {
+  color: #73db43;
+}
+
+.calcButtonWide {
+  width: 230%;
+}
+
+#buttonGrid {
+  margin-top: 2rem;
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 1.5rem;
+}
+
+button {
+  color: #aaf787;
+  background-color: #000308;
+  width: 5rem;
+}
+
+@media screen and (max-width: 800px) {
+  .calcBody {
+    scale: 75%;
+    align-self: center;
+    align-content: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .calcBody {
+    scale: 60%;
+    align-self: center;
+    align-content: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-left: -10rem;
+  }
+}
