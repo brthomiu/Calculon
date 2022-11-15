@@ -98,22 +98,32 @@ button {
     align-content: center;
     justify-content: center;
     overflow: hidden;
-    margin-left: -5rem;
+    margin: auto;
   }
   #buttonGrid {
     margin-top: 2rem;
     display: inline-grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    gap: .5rem;
+    gap: .2rem;
   }
   button {
     color: #aaf787;
     background-color: #000308;
-    width: 4rem;
+    width: 3.5rem;
     margin: auto;
   }
   .calcButtonWide {
     width: 210%;
   }
+
+  .calcHeader {
+    flex-direction: column-reverse;
+    font-size: medium;
+  }
+
+  .calculonIcon {
+    display: none;
+  }
+  
 }

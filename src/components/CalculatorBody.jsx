@@ -426,7 +426,7 @@ const CalculatorBody = () => {
             }
           }}
         >
-          DEL
+          ←
         </button>
 
         <button
