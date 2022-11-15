@@ -68,9 +68,26 @@ button {
     align-content: center;
     justify-content: center;
     padding: 1rem;
-    overflow: scroll;
+    overflow: hidden;
+  }
+  #buttonGrid {
+    margin-top: 2rem;
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+  }
+  button {
+    color: #aaf787;
+    background-color: #000308;
+    width: 5rem;
+    margin: auto;
+  }
+  .calcButtonWide {
+    width: 220%;
   }
 }
+
 
 @media screen and (max-width: 550px) {
   .calcBody {
@@ -80,7 +97,23 @@ button {
     align-self: center;
     align-content: center;
     justify-content: center;
-    overflow: scroll;
+    overflow: hidden;
     margin-left: -5rem;
+  }
+  #buttonGrid {
+    margin-top: 2rem;
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: .5rem;
+  }
+  button {
+    color: #aaf787;
+    background-color: #000308;
+    width: 4rem;
+    margin: auto;
+  }
+  .calcButtonWide {
+    width: 210%;
   }
 }
