@@ -118,11 +118,6 @@ button {
   }
 
   .calcHeader {
-    flex-direction: column-reverse;
-    font-size: medium;
-  }
-
-  .calculonIcon {
     display: none;
   }
   
