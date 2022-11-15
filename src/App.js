@@ -5,9 +5,9 @@ import CalculatorBody from "./components/CalculatorBody";
 const App = () => {
   return (
     <>
-    <div className="App">
-      <CalculatorBody />
-    </div>
+      <div className="App">
+        <CalculatorBody />
+      </div>
     </>
   );
 };

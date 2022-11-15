@@ -61,6 +61,7 @@ button {
 }
 
 @media screen and (max-width: 800px) {
+  /* Mid size media query */
   .calcBody {
     scale: 70%;
     max-width: fit-content;
@@ -89,6 +90,7 @@ button {
 }
 
 @media screen and (max-width: 550px) {
+  /* Small media query */
   .calcBody {
     scale: 50%;
     max-width: fit-content;
