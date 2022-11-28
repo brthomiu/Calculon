@@ -1,37 +1,37 @@
 .calcBody {
+  align-items: center;
+  background-color: #feb81c;
+  border-radius: 10%;
+  color: #000308;
   display: flex;
   flex-direction: column;
-  background-color: #feb81c;
-  color: #000308;
-  border-radius: 10%;
-  width: 42rem;
-  align-items: center;
   overflow: hidden;
+  width: 42rem;
 }
 
 .calcHeader {
+  align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
 }
 
 .calculonIcon {
-  width: 5rem;
   margin-left: 2rem;
+  width: 5rem;
 }
 
 .calcDisplay {
+  align-items: center;
   background-color: #000308;
-  width: 75%;
-  height: 4rem;
   border-radius: 0;
   color: #aaf787;
   display: flex;
   flex-direction: row;
+  height: 4rem;
   justify-content: right;
-  align-items: center;
   overflow: hidden;
+  width: 75%;
 }
 
 .calcDisplay h1 {
@@ -42,47 +42,52 @@
   color: #73db43;
 }
 
+.calcButtons {
+  display: flex;
+  flex-direction: row;
+}
+
 .calcButtonWide {
   width: 230%;
 }
 
 #buttonGrid {
-  margin-top: 2rem;
   display: inline-grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   gap: 1.5rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  margin-top: 2rem;
 }
 
 button {
-  color: #aaf787;
   background-color: #000308;
+  color: #aaf787;
   width: 5rem;
 }
 
 @media screen and (max-width: 800px) {
   /* Mid size media query */
   .calcBody {
-    scale: 70%;
-    max-width: fit-content;
-    align-self: center;
     align-content: center;
+    align-self: center;
     justify-content: center;
-    padding: 1rem;
+    max-width: fit-content;
     overflow: hidden;
+    padding: 1rem;
+    scale: 70%;
   }
   #buttonGrid {
-    margin-top: 2rem;
     display: inline-grid;
+    gap: 1rem;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    gap: 1rem;
+    margin-top: 2rem;
   }
   button {
-    color: #aaf787;
     background-color: #000308;
-    width: 5rem;
+    color: #aaf787;
     margin: auto;
+    width: 5rem;
   }
   .calcButtonWide {
     width: 220%;
@@ -92,27 +97,27 @@ button {
 @media screen and (max-width: 550px) {
   /* Small media query */
   .calcBody {
-    scale: 50%;
-    max-width: fit-content;
-    padding: 1rem;
-    align-self: center;
     align-content: center;
+    align-self: center;
     justify-content: center;
-    overflow: hidden;
     margin: auto;
+    max-width: fit-content;
+    overflow: hidden;
+    padding: 1rem;
+    scale: 50%;
   }
   #buttonGrid {
-    margin-top: 2rem;
     display: inline-grid;
+    gap: 0.2rem;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    gap: 0.2rem;
+    margin-top: 2rem;
   }
   button {
-    color: #aaf787;
     background-color: #000308;
-    width: 3.5rem;
+    color: #aaf787;
     margin: auto;
+    width: 3.5rem;
   }
   .calcButtonWide {
     width: 210%;
